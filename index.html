@@ -10,10 +10,35 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="./javascripts/Chart.js"></script>
     <title>Dashboard by bonafideduck</title>
   </head>
 
   <body>
+  <canvas id="myChart" width="400" height="400"></canvas>
+  <script>
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+type: 'bar',
+data: {
+labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+datasets: [{
+label: '# of Votes',
+data: [12, 19, 3, 5, 2, 3]
+}]
+},
+options: {
+scales: {
+yAxes: [{
+ticks: {
+beginAtZero:true
+}
+}]
+}
+}
+});
+  </script>
     <div id="container">
       <div class="inner">
 
