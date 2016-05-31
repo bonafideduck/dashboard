@@ -16,29 +16,6 @@
   </head>
 
   <body>
-  <canvas id="myChart" width="400" height="400"></canvas>
-  <script>
-var ctx = document.getElementById("myChart");
-var myChart = new Chart(ctx, {
-type: 'bar',
-data: {
-labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-datasets: [{
-label: '# of Votes',
-data: [12, 19, 3, 5, 2, 3]
-}]
-},
-options: {
-scales: {
-yAxes: [{
-ticks: {
-beginAtZero:true
-}
-}]
-}
-}
-});
-  </script>
     <div id="container">
       <div class="inner">
 
@@ -56,6 +33,13 @@ beginAtZero:true
         <hr>
 
         <section id="main_content">
+          <table>
+              <tr>
+                  <td>Col 1</td>
+                  <td><canvas id="myPie" width="40px" height="40px"></canvas></td>
+                  <td>Col 3</td>
+              </tr>
+          </table>
           <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
@@ -90,5 +74,6 @@ beginAtZero:true
         
       </div>
     </div>
+  <script src="./javascripts/row3.js"></script>
   </body>
-</html>
+  </html>
